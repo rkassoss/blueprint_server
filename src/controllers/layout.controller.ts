@@ -8,8 +8,14 @@ var fs = require("fs");
 
 export async function getLayout(req: Request, res: Response, next: NextFunction){
 
-    console.log(req.params);
-    res.send( {'name': 'brett'})
+
+    let fileName = req.params.user+'_'+req.params.layoutIds+'.json';
+
+    fs.readFile(fileName, function(err:string, buf:any) {
+       
+        res.send( buf.toString())
+      });
+  
 
 }
 
