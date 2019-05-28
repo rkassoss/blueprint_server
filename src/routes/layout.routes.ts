@@ -7,6 +7,7 @@ const jsonParser = bodyParser.json();
 
 router.use(jsonParser)
 
-router.post('/getUserLayout', layoutCrl.getLayout);
+router.get('/getUserLayout/:user/:layoutIds', layoutCrl.getLayout);
+router.post('/saveUserLayout', layoutCrl.saveLayout);
 
 export default router;
