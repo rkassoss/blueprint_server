@@ -10,4 +10,6 @@ router.use(jsonParser)
 router.get('/getUserLayout/:user/:layoutIds', layoutCrl.getLayout);
 router.post('/saveUserLayout', layoutCrl.saveLayout);
 
+router.get('/generatePdf', layoutCrl.generatePdf);
+
 export default router;
