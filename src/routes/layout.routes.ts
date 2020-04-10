@@ -7,9 +7,6 @@ const jsonParser = bodyParser.json();
 
 router.use(jsonParser)
 
-router.get('/getUserLayout/:user/:layoutIds', layoutCrl.getLayout);
-router.post('/saveUserLayout', layoutCrl.saveLayout);
-
-router.get('/generatePdf', layoutCrl.generatePdf);
+router.get('/scrapeEvive', layoutCrl.scrapeEvive);
 
 export default router;

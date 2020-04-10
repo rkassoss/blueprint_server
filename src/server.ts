@@ -26,7 +26,7 @@ export class BlueprintServer {
     }
 
     private routes(){
-        this.app.use('/layout', layoutRouter);
+        this.app.use('/api', layoutRouter);
     }
 
     async start() {
@@ -37,5 +37,4 @@ export class BlueprintServer {
     stop(){
         this.server.close()
     }
-
 }
