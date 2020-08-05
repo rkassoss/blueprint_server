@@ -7,6 +7,6 @@ const jsonParser = bodyParser.json();
 
 router.use(jsonParser)
 
-router.get('/scrapeEvive', layoutCrl.scrapeEvive);
+router.get('/exportPdf', layoutCrl.exportPdf);
 
 export default router;

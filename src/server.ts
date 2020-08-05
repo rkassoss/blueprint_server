@@ -1,6 +1,5 @@
 "use strict";
 
-import * as bodyParser from "body-parser";
 import  express from "express";
 import * as middleware from "./middleware/middleware";
 import  layoutRouter  from './routes/layout.routes';
